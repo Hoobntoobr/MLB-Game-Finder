@@ -1,0 +1,152 @@
+/* 
+************************ 
+* General 
+************************ 
+*/ 
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background: #F8F8F8;
+}
+
+
+/*
+************************ 
+* Navbar 
+************************ 
+*/
+.navbar {
+  box-shadow: 1px 0 5px #000;
+}
+.navbar.is-info {
+  background-color: #041e42;
+}
+.navbar-item {
+  font-size: 14px;
+}
+
+.navbar-menu.navbar-item a {
+  color: #CCD2D9;
+}
+
+.navbar-item .is-active {
+ color: #CCD2D9; 
+}
+
+.navbar-item img {
+  max-height: 2.5rem;
+}
+
+
+/*
+************************ 
+* Form
+************************ 
+*/
+
+.mini-hero {
+  border-bottom: 0.5px solid #DDDDDD;
+  margin-bottom: 20px;
+  background-color: white;
+}
+
+.title {
+  padding: 20px 15px;
+  margin-bottom: 0;
+  color: #0048AB;
+}
+
+.title:not(:last-child) {
+  margin-bottom: 0;
+}
+
+.form {
+  padding:5px 15px;
+  display: flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+}
+
+.select {
+  margin: 0px 5px;
+}
+
+.control {
+  margin: 5px 0;
+}
+
+
+/*
+************************ 
+* Loading gif
+************************ 
+*/
+.load {
+  width: 50px;
+  margin: auto;
+  display: flex;
+}
+
+
+/*
+************************ 
+* Cards
+************************ 
+*/
+
+.card time {
+  font-size: 10px; color: #AAAAAA;
+}
+
+.content p:not(:last-child) {
+  margin-bottom: 0;
+}
+
+
+/*
+************************ 
+* Modal
+************************ 
+*/
+
+.modal p {
+  color: #0048AB;
+}
+
+.modal .input {
+  margin: 0.5rem 0 0.5rem;
+}
+
+
+/*
+************************ 
+* Media Queries
+************************ 
+*/
+
+@media screen and (min-width: 1024px) {
+  .card {
+    transition: 80ms linear;
+  }
+  .card:hover {
+    transform: scale(1.05);
+  }
+
+}
+
+@media only screen and (min-width: 1440px) {
+  .card {
+    height: 320px;
+  }
+  .card-footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    overflow: hidden;
+  }  
+}
